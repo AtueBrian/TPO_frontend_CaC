@@ -188,12 +188,17 @@ ul{
     font-size: 2rem;
 }
 
+.form-main{
+    display: block;
+}
+
 
 
 /* ----- ayuda ------- */
 
 /* ----- ingreso ------ */
-.main--ingreso .main--ingreso--titulo h1{
+
+/* .main--ingreso .main--ingreso--titulo h1{
     font-size: 5rem;
     text-align: center;
 }
@@ -230,9 +235,7 @@ ul{
     font-size: 1.4rem;
     margin-bottom: 5rem;
     text-align: center;
-}
-
-
+} */
 
 /* ----- ingreso ------ */
 

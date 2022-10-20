@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style-form.css">
+
     <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
     <title>FintechBank</title>
     <!-- #2D76EF color de la pagina -->
@@ -33,30 +34,35 @@
     <!-- header  -->
 
     <!-- main  -->
-    <main class="main">
 
+        <main class="main form-main">
 
-        <form action="https://formspree.io/f/xyyvdodj" method="post" class="formulario" id="formulario">
-            <h1 class="formulario__titulo">Contactenos</h1>
+        
+            <form action="" class="formulario" id="formulario">
+                <h1 class="formulario__titulo">Registro</h1>
 
-           <input type="text" class=" formulario__input" id="nombre">
-           <label for="nombre"class="formulario__label" name="nombres" required="" >Nombres </label>
+    
+               <input type="text" class=" formulario__input" id="usuario">
+               <label for="nombre"class="formulario__label" name="usuario" required="" >Usuario </label>
+            
+               <input type="password" class=" formulario__input" id="contra">
+               <label for="contra" class="formulario__label" name="contra" required="">Contraseña </label>
 
-           <input type="email" class=" formulario__input" id="correo">
-           <label for="correo" class="formulario__label" name="correo" required="">Correo </label>
+               <input type="password" class=" formulario__input" id="contra2">
+               <label for="contra2" class="formulario__label" name="contra2" required="">Repetir contraseña </label>
 
-           <input type="text" class=" formulario__input" id="telefono">
-           <label for="telefono" class="formulario__label" name="telefono" required="">Teléfono</label>
+               <input type="email" class=" formulario__input" id="correo">
+               <label for="correo" class="formulario__label" name="correo" required="">Correo</label>
+    
+                <input type="submit" class="formulario__submit" name="registrase" value="Registrase">
+    
+             </form>
 
-           <input type="text" class=" formulario__input" id="mensaje">
-           <label for="mensaje" class="formulario__label" name="mensaje"  required="">Mensaje</label>
-
-            <input type="submit" class="formulario__submit" name="Envio" value="Enviar">
-         </form>
-         
-
-
-    </main>
+             
+    
+    
+    
+        </main>
 
     <!-- main  -->
 
@@ -65,7 +71,7 @@
         <div class="footer--nocreditos">
             <div class="footer--nocreditos--logoiconos">
                 <div class="footer--logo">
-                    <a href="../index.html"><img src="../img/FintechBank.png" alt="logo" id="logoinicio"></a>
+                    <a href="#logoinicio"><img src="../img/FintechBank.png" alt="logo"></a>            
                 </div>
                 <div class="footer--iconos">
                     <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -92,8 +98,7 @@
         </div>
     </footer>
     <!-- footer  -->
-
-    <!-- script -->
     <script src="../js/form.js"></script>
+
 </body>
 </html>
