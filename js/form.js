@@ -17,8 +17,7 @@ const usuario = document.getElementById('usuario')
 const contra = document.getElementById('usuario')
 const contra2 = document.getElementById('usuario')
 const correo = document.getElementById('correo')
-const form = document.getElementById('formulario')
-const parrafo = document.getElementById('warnings')
+const form = document.getElementById("form");
 
 const expresiones = {
 	usuario: /^[a-zA-Z0-9]{4,16}$/, // Letras, numeros
@@ -33,6 +32,19 @@ const regexCorreo = /^[0-9a-zA-Z._.-]+\@[0-9a-zA-Z._.-]+\.[0-9a-zA-Z]+$/;
 const regexNombreApellido = /^[A-z]{3,30}$/;
 const regexUsuario = /^[a-zA-Z0-9]{4,16}$/, // Letras, numeros
 const pass = /^.{4,12}$/, // 4 a 12 digitos.
+
+
+function validarCorreo() {
+    if (correo.value == "") {
+      correo.className = "error";
+      document.getElementById("errorCorreo").innerHTML = "Ingrese el Email";
+  
+    } else {
+      document.getElementById("errorCorreo").innerHTML = "";
+      correo.className = "";
+    }
+  }
+  
 
 
 function validarEntradas() {
