@@ -111,102 +111,102 @@ function validarConfirmationEmail() {
 
 //------------------validacion de Envio de Form
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
+// form.addEventListener("submit", function (e) {
+//   e.preventDefault();
 
-  let error = false;
-  let mensajesError = "";
+//   let error = false;
+//   let mensajesError = "";
 
-  if (entradas.value == "") {
-    error = true;
-    mensajesError += "Ingrese la cantida de entradas deseadas\n";
-    entradas.className = "error";
-    document.getElementById("errorEntradas").innerHTML =
-      "Ingrese la cantida de entradas deseadas";
-  }
-  if (apellido.value == "") {
-    error = true;
-    mensajesError += "Ingrese el apellido\n";
-    apellido.className = "error";
-    document.getElementById("errorApellido").innerHTML =
-      "Ingrese el apellido";
-  } else if (!regexNombreApellido.test(apellido.value)) {
-    error = true;
-    mensajesError += "El Apellido acepta solo letras entre 3 y 30 caracteres\n";
-    apellido.className = "error";
-    document.getElementById("errorApellido").innerHTML =
-      "El Apellido acepta solo letras entre 3 y 30 caracteres\n";
-  }
+//   if (entradas.value == "") {
+//     error = true;
+//     mensajesError += "Ingrese la cantida de entradas deseadas\n";
+//     entradas.className = "error";
+//     document.getElementById("errorEntradas").innerHTML =
+//       "Ingrese la cantida de entradas deseadas";
+//   }
+//   if (apellido.value == "") {
+//     error = true;
+//     mensajesError += "Ingrese el apellido\n";
+//     apellido.className = "error";
+//     document.getElementById("errorApellido").innerHTML =
+//       "Ingrese el apellido";
+//   } else if (!regexNombreApellido.test(apellido.value)) {
+//     error = true;
+//     mensajesError += "El Apellido acepta solo letras entre 3 y 30 caracteres\n";
+//     apellido.className = "error";
+//     document.getElementById("errorApellido").innerHTML =
+//       "El Apellido acepta solo letras entre 3 y 30 caracteres\n";
+//   }
 
-  if (nombre.value == "") {
-    error = true;
-    mensajesError += "Ingrese el nombre\n";
-    nombre.className = "error";
-    document.getElementById("errorNombre").innerHTML =
-      "Ingrese el nombre";
-  } else if (!regexNombreApellido.test(nombre.value)) {
-    error = true;
-    mensajesError += "El Nombre acepta solo letras entre 3 y 30 caracteres\n";
-    nombre.className = "error";
-    document.getElementById("errorNombre").innerHTML =
-      "El Nombre acepta solo letras entre 3 y 30 caracteres";
-  }
+//   if (nombre.value == "") {
+//     error = true;
+//     mensajesError += "Ingrese el nombre\n";
+//     nombre.className = "error";
+//     document.getElementById("errorNombre").innerHTML =
+//       "Ingrese el nombre";
+//   } else if (!regexNombreApellido.test(nombre.value)) {
+//     error = true;
+//     mensajesError += "El Nombre acepta solo letras entre 3 y 30 caracteres\n";
+//     nombre.className = "error";
+//     document.getElementById("errorNombre").innerHTML =
+//       "El Nombre acepta solo letras entre 3 y 30 caracteres";
+//   }
 
-  if (email.value == "") {
-    error = true;
-    mensajesError += "Ingrese el Email\n";
-    email.className = "error";
-    document.getElementById("errorEmail").innerHTML = "Ingrese el Email";
-  } else if (!regexEmail.test(email.value)) {
-    error = true;
-    mensajesError += "Formato de Email incorrecto\n";
-    email.className = "error";
-    document.getElementById("errorEmail").innerHTML =
-      "Formato de Email incorrecto";
-  }
+//   if (email.value == "") {
+//     error = true;
+//     mensajesError += "Ingrese el Email\n";
+//     email.className = "error";
+//     document.getElementById("errorEmail").innerHTML = "Ingrese el Email";
+//   } else if (!regexEmail.test(email.value)) {
+//     error = true;
+//     mensajesError += "Formato de Email incorrecto\n";
+//     email.className = "error";
+//     document.getElementById("errorEmail").innerHTML =
+//       "Formato de Email incorrecto";
+//   }
 
-  if (confirmationEmail.value == "") {
-    error = true;
-    mensajesError += "Confirme el Email\n";
-    confirmationEmail.className = "error";
-    document.getElementById("errorConfirmationEmail").innerHTML =
-      "Ingrese el Email";
-  } else if (!regexEmail.test(confirmationEmail.value)) {
-    error = true;
-    mensajesError += "Formato de Email incorrecto\n";
-    confirmationEmail.className = "error";
-    document.getElementById("errorConfirmationEmail").innerHTML =
-      "Formato de Email incorrecto";
-  }
+//   if (confirmationEmail.value == "") {
+//     error = true;
+//     mensajesError += "Confirme el Email\n";
+//     confirmationEmail.className = "error";
+//     document.getElementById("errorConfirmationEmail").innerHTML =
+//       "Ingrese el Email";
+//   } else if (!regexEmail.test(confirmationEmail.value)) {
+//     error = true;
+//     mensajesError += "Formato de Email incorrecto\n";
+//     confirmationEmail.className = "error";
+//     document.getElementById("errorConfirmationEmail").innerHTML =
+//       "Formato de Email incorrecto";
+//   }
 
-  if (email.value != confirmationEmail.value) {
-    error = true;
-    mensajesError += "Los emails no son igual\n";
-    email.className = "error";
-    confirmationEmail.className = "error";
-    document.getElementById("errorConfirmationEmail").innerHTML =
-      "Los emails no son iguales";
-  }
+//   if (email.value != confirmationEmail.value) {
+//     error = true;
+//     mensajesError += "Los emails no son igual\n";
+//     email.className = "error";
+//     confirmationEmail.className = "error";
+//     document.getElementById("errorConfirmationEmail").innerHTML =
+//       "Los emails no son iguales";
+//   }
 
-  let select = false;
-  for (i in tarjeta) {
-    if (tarjeta[i].checked) {
-      select = true;
-    }
-  }
+//   let select = false;
+//   for (i in tarjeta) {
+//     if (tarjeta[i].checked) {
+//       select = true;
+//     }
+//   }
 
-  if (!select) {
-    error = true;
-    mensajesError += "Seleccione Tarjeta de Credito\n";
-    document.getElementById("errorTarjeta").innerHTML =
-      "Seleccione Tarjeta de Credito";
-  } else {
-    document.getElementById("errorTarjeta").innerHTML = "";
-  }
+//   if (!select) {
+//     error = true;
+//     mensajesError += "Seleccione Tarjeta de Credito\n";
+//     document.getElementById("errorTarjeta").innerHTML =
+//       "Seleccione Tarjeta de Credito";
+//   } else {
+//     document.getElementById("errorTarjeta").innerHTML = "";
+//   }
 
-  if (error) {
-    alert(mensajesError);
-  } else {
-    this.submit();
-  }
-});
+//   if (error) {
+//     alert(mensajesError);
+//   } else {
+//     this.submit();
+//   }
+// });
