@@ -1,0 +1,9 @@
+.main--costos--cards{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;  
+    grid-template-rows: auto auto auto;
+    gap: 1em;
+}
+
+
+
