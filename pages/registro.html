@@ -38,25 +38,32 @@
         <main class="main form-main">
 
         
-            <form action="" class="formulario" id="formulario">
+            <form action="/pages/ingresar.html" method="post" class="formulario" id="formularioRegistro">
                 <h1 class="formulario__titulo">Registro</h1>
 
     
-               <input type="text" class=" formulario__input" id="usuario">
-               <label for="nombre"class="formulario__label" name="usuario" required="" >Usuario </label>
-            
-               <input type="password" class=" formulario__input" id="contra">
-               <label for="contra" class="formulario__label" name="contra" required="">Contraseña </label>
+               <input type="text" class=" formulario__input" id="usuario" name="usuario">
+               <label for="usuario"class="formulario__label"  required="" >Usuario </label>
+        
+               <input type="password" class=" formulario__input" id="contra" name="contra">
+               <label for="contra" class="formulario__label"  required="">Contraseña </label>
 
-               <input type="password" class=" formulario__input" id="contra2">
-               <label for="contra2" class="formulario__label" name="contra2" required="">Repetir contraseña </label>
+               <input type="password" class=" formulario__input" id="contra2" name="contra2">
+               <label for="contra2" class="formulario__label"  required="">Repetir contraseña </label>
 
-               <input type="email" class=" formulario__input" id="correo">
-               <label for="correo" class="formulario__label" name="correo" required="">Correo</label>
-               <p id="errorCorreo"></p>
+               <input type="email" class=" formulario__input" id="correo" name="correo">
+               <label for="correo" class="formulario__label"  required="">Correo</label>
+
+               <span class="error-span"></span>
+               <span class="error-span"></span>
+               <span class="error-span"></span>
+               <span class="error-span"></span>
+
+
+               <input type="submit" class="formulario__submit" name="registrase" value="Registrase" >
     
-                <input type="submit" class="formulario__submit" name="registrase" value="Registrase">
-    
+
+                <p></p>
              </form>
 
              

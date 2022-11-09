@@ -36,24 +36,27 @@
     <main class="main form-main">
 
         
-        <form action="" class="formulario" id="formulario">
+        <form action="/pages/sesionUsuario.html" class="formulario" id="form">
             <h1 class="formulario__titulo">Ingresar</h1>
 
-           <input type="text" class=" formulario__input" id="Usuario">
-           <label for="nombre"class="formulario__label" name="usuario" required="" >Usuario </label>
+           <input type="text" class=" formulario__input" id="user" name="user">
+           <label for="user"class="formulario__label"  required="" >Usuario </label>
 
-           <input type="password" class=" formulario__input" id="Contraseña">
-           <label for="correo" class="formulario__label" name="Contraseña" required="">Contraseña </label>
+           <input type="password" class=" formulario__input" id="pass" name="pass">
+           <label for="pass" class="formulario__label" required="">Contraseña </label>
 
 
 
-            <input type="submit" class="formulario__submit" name="Envio" value="Ingresar">
-
+            <input type="submit" class="formulario__submit" name="ingresar" id="ingresar" value="Ingresar">
+            <br>
+            <span class="error-span"></span>
          </form>
          <br>
 
+ 
+        
          <form method="get" action="/pages/registro.html"class="formulario">
-            <button type="submit" class="formulario__submit">Resgistrate</button>
+            <button type="submit" class="formulario__submit" onclick="">Resgistrate</button>
         </form>
          
 
@@ -95,7 +98,12 @@
         </div>
     </footer>
     <!-- footer  -->
+
+
+    <script src="../js/login.js"></script>
     <script src="../js/form.js"></script>
+
+
 
 </body>
 </html>

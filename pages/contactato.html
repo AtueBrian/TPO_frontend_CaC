@@ -35,26 +35,35 @@
     <!-- main  -->
     <main class="main">
 
+        <!-- action="https://formspree.io/f/xyyvdodj" -->
+        
+        <form  method="post" action="https://formspree.io/f/xyyvdodj" class="formulario" id="formularioContacto">
+            <h1 class="formulario__titulo">Contactanos</h1>
 
-        <form action="https://formspree.io/f/xyyvdodj" method="post" class="formulario" id="formulario">
-            <h1 class="formulario__titulo">Contactenos</h1>
+           <input type="text" class=" formulario__input" id="nombre" name="nombre" >
+           <label for="nombre"class="formulario__label" required="" >Nombres </label>
 
-           <input type="text" class=" formulario__input" id="nombre">
-           <label for="nombre"class="formulario__label" name="nombres" required="" >Nombres </label>
-
-           <input type="email" class=" formulario__input" id="correo">
+           <input type="email" class=" formulario__input" id="correo" name="correo">
            <label for="correo" class="formulario__label" name="correo" required="">Correo </label>
 
-           <input type="text" class=" formulario__input" id="telefono">
-           <label for="telefono" class="formulario__label" name="telefono" required="">Teléfono</label>
+           <input type="text" class=" formulario__input" id="telefono" name="telefono">
+           <label for="telefono" class="formulario__label"  required="">Teléfono</label>
 
-           <input type="text" class=" formulario__input" id="mensaje">
-           <label for="mensaje" class="formulario__label" name="mensaje"  required="">Mensaje</label>
+           <input type="text" class=" formulario__input" id="mensaje" name="mensaje" >
+           <label for="mensaje" class="formulario__label"  required="">Mensaje</label>
+          
+            
+            
+            <span class="error-span"></span> 
+            <span class="error-span"></span>
+            <span class="error-span"></span>
+            <span class="error-span"></span>         
 
-            <input type="submit" class="formulario__submit" name="Envio" value="Enviar">
-         </form>
+            <input type="submit" class="formulario__submit" name="Enviar" value="Enviar" >
+        
+        </form>
          
-
+         
 
     </main>
 
