@@ -36,8 +36,14 @@ ul{
     font-size: 2rem;
     display: flex;
 }
-
-.header--nav .header--nav--menu{
+.menu--bar {
+    font-size: 5rem;
+    margin-top: 5rem;
+    margin-right: 1rem;
+    display: none;
+    cursor: pointer;
+}
+.header--nav .header--nav--menu {
     display: flex;
     padding: 1rem 0 2rem;
 }
@@ -282,3 +288,37 @@ ul{
 }
 
 /* ----- footer ------ */
+
+/* --------- media querys----------------- */
+
+
+@media (max-width: 795px) {
+    .header{
+        padding: 1rem 5rem;
+        display: flex;
+        justify-content:space-between;
+    }
+
+
+    .menu--bar {
+        display: contents;
+    }
+    .header--nav  .header--nav--menu,.header--nav--ingreso{
+        display: none;
+    }
+    .header--logo a img{
+        width: 20rem;
+    }
+
+    .main {
+        display: block;
+
+    }
+    .main  .main--texto{
+        padding-top: 0rem;
+
+    } 
+    .main .main--img img{
+        width: 60rem;
+    }
+  }
